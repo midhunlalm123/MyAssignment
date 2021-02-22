@@ -8,7 +8,7 @@ export class CommonService {
   private parenturl="http://localhost:3000/data";
   private childurl="http://localhost:4800/data";
   constructor(private http:HttpClient) { }
- 
+  
 
   getall()
   {

@@ -21,6 +21,7 @@ export class ChildComponent implements OnInit {
   viewChild() {
     this.service.getchild().subscribe(res => {
       this.result = res;
+   
       this.sum = 0;
       let resArray = [];
       this.result.forEach(element => {
@@ -33,6 +34,7 @@ export class ChildComponent implements OnInit {
         }
       });
       this.result = resArray;
+      console.log( this.result);
       //this.matDilog.close(sum)
     })
   }
