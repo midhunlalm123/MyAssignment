@@ -1,0 +1,15 @@
+
+
+table{
+    width: 100%;
+}
+td{
+    position: relative;
+}
+td mat-icon{
+    position: absolute;
+    right: 10rem;
+    top: 13px;
+    color: #0fd817;
+    cursor: pointer;
+}

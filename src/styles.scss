@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import './app/theeme/variable.scss';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.card{
+    margin            : 10px;
+    border-radius     : 8px !important;
+    height            : fit-content;
+    height            : fit-content;
+    padding           : 20px;
+    // background        : #f9f9f9fa;
+    // background: #fff;
+    background: #ffffffde;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow   : 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+    box-shadow        : 0px 0px 5px 0px rgba(0, 0, 0, 0.65);
+}
+table td {
+    text-align: center;
+    border-bottom: 1px solid #afabab;
+    line-height: 45px;
+}
+thead{
+    background:$primary;
+    color: #fff;
+    line-height: 3;
+}
+.wraper{
+    margin: 30px;
+}

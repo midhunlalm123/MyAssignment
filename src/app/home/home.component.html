@@ -1,0 +1,24 @@
+<div class="card wraper" fxFlex=100 fxLayout="row" fxLayout.xs="column"> 
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Total Amount</th>
+            <th>Total Paid
+                Amount</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of products; ">
+                <td>{{item.id}}</td>
+                <td>{{item.receiver}}</td>
+                <td>{{item.sender}}</td>
+                <td>{{item.totalAmount}}</td>
+                <td a (click)=view(item)>
+                  <b>  {{item.sum}}</b>
+                    <mat-icon>remove_red_eye</mat-icon></td>
+            </tr>
+        </tbody> 
+    
+    </table>
+</div>
